@@ -3,10 +3,11 @@
     This app, a game with bomb theme, is strictly based on the rule of connect4. It contains two pages, starting page and game page.
 Starting page
     This page, with three controllable components, is very simple. Image 1 shows the basic feature of starting page.
-![Starting Page](https://github.com/1040870658/Connect4/raw/master/pics/start_activity.png)
+# ![Starting Page](https://github.com/1040870658/Connect4/raw/master/pics/start_activity.png)
+
     Firstly, players are able to click the left bomb button to unlock the edit function and edit their own name, or default names will be used. Process showed as Image 2.
 
-![Unlock Editing](https://github.com/1040870658/Connect4/raw/master/pics/unlock_edit_name.png)
+# ![Unlock Editing](https://github.com/1040870658/Connect4/raw/master/pics/unlock_edit_name.png)
 
     Firstly, players are able to click the left bomb button to unlock the edit function and edit their own name, or default names will be used. Process showed as Image 2.
     When the edit function is unlocked, the bomb button at the left side rotates up. Then, the name of players can be customized. 
@@ -14,7 +15,7 @@ Finally, it’s time to press the START button. When the button is pressed, it t
 Game page
 Game page contains three sections: hint section at the top, control panel at the middle and game board at the bottom. Image 3 shows the detailed feature.
 
-![initial_game](https://github.com/1040870658/Connect4/raw/master/pics/initial_game.png)
+# ![initial_game](https://github.com/1040870658/Connect4/raw/master/pics/initial_game.png)
 
 Hint Section
 This section hints the chess(bomb) color of each player and repeatedly plays rhythmic animation to hint who owns the current turn to put chess. For example, when the game turns to player 1, the text “Player 1” dances.
@@ -31,7 +32,7 @@ Normal State: This state displays the which positions are empty, which are cover
 Putting State: When a player gives a valid putting, the game board will turn to this state. In this state, a chess cell at the top of corresponding touched column will be colored and it falls down to the first accessible position while other chess cells which are above the target position in the same column moves up a position. In addition, when a player tries to put a chess in a full column, the whole column will shake and vibrate to indicate this invalid input.
 Retracting State: This state opposite against Putting State. When the “Rollback” button is pressed, game board turns to this state. The chess which is most recently put in will move up to the top of the corresponding column and then disappear while other cells above the target in the same column will move down a position.
 Finished State: When the game meets the termination conditions (reaching steps limit and one of the players win the game), the board turns to this state. If no one wins the game, the board will display nothing new. If one wins the game, all the connected chesses which fulfills the rule of CONNECT4 will display an animation that corresponding chesses boom after burning and shaking. Players need to press the RESTART button to reset the game in this state. Image 4 shows the detail of Finished State.
-![Finished State](https://github.com/1040870658/Connect4/raw/master/pics/p1win.png)
+# ![Finished State](https://github.com/1040870658/Connect4/raw/master/pics/p1win.png)
 ![Finished State](https://github.com/1040870658/Connect4/raw/master/pics/multi-winnerpath.png)
 ![Finished State](https://github.com/1040870658/Connect4/raw/master/pics/game_draw.png)
 
