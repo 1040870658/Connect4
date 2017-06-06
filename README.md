@@ -87,7 +87,7 @@ Game Page: There are six animations in this page.
 
 Fundamentally, architecture design is to achieve flexibility, modifiability and maintainability. I try every to separate model, view and logical operation. Furthermore, as the special development mode of Android development, I also try to delegate all the model and logical operation to a new class, called presenter, instead of having them controlled by Activity. Because activity have to maintain view operation so it must be chaos when activity maintain both logic and view. I design four essential classes: GamePresenter which is used to handle the logic (game judge, model refresh, etc), GameMotion which is implemented for complex animation of the view, Board which is one of the major models of the game and MainActivity. As a matter of fact, MainActivity is only on duty of displaying view. (But I still failed to totally separate the model from MainActivity. In other word, some operations in MainActivity still directly rely on the information of Board, the model of the game.) Logic computation running on a child thread and notify UI Thread to refresh view by a handler declare in UI Thread so that logic and view can be combined.
 
-Under this design, this game can work efficiently and is able to be easily modified or expanded. For example, the initial 6*7 board can easily change to 4*4 board.
+Under this design, this game can work efficiently and is able to be easily modified or expanded. For example, the initial 6\*7 board can easily change to 4\*4 board.
 
 ## Implementation
 
