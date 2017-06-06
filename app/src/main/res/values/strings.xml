@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Connect4</string>
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="step">total steps:    </string>
+    <string name="roll_back">rollback</string>
+    <string name="restart">restart</string>
+    <string name="backtostart">back</string>
+    <string name="student_name">CREATED BY : YE,Chen </string>
+    <string name="student_id">STUID :  3035348451 </string>
+    <string name="start">Start</string>
+    <string name="caption">Connect4</string>
+</resources>
